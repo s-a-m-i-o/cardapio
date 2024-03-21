@@ -1,76 +1,64 @@
 body {
-    background-color: #000;
+    background-color: var(--cor-de-fundo);
     color: #fff;
+    font-family: var(--fonte-nome);
 }
 
-header {
-    border-bottom: 5px double #ccc;
-}
-
-h1.titulo {
-    margin: 30px 5px;
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
+.header h1 {
     text-align: center;
-    
+    margin: 15px;
+    padding: 7px;
+    border-bottom: 3px solid #ccc;
 }
 
-.conteudo {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   
-}
-
-.conteudo img {
-    width: 200px;
-}
-
-.container {
+.todo-conteudo .pai {
     display: flex;
+    justify-content:space-around ; 
+    align-items: center;   
+}
+
+.todo-conteudo .pai .conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;  
+    align-items: center; 
+    padding: 15px;
+    margin: 10px;
+    max-width: 500px;
+    border-right: 2px solid #ccc;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
     position: relative;
-    width: 100%;
-    background-color: aqua;
 }
 
-.container .item{
-    position: absolute;
-    bottom: 80px;
-}
-
-.dentro {
-    display: flex;
-    justify-content: space-between;
-    border: 5px solid black;
-}
-
-
-.item .subtitulo {
-    border-bottom: 3px solid #fff;
+.todo-conteudo .pai .conteudo img {
     width: 250px;
-    font-size: 35px;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    text-align: center;
 }
 
-.item .descricao {
-    width: 250px;
-    flex-wrap: wrap;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    color: #02020238;
-    transition: 0.3s ease-in-out;
-}
-
-.item:hover .descricao {
+.todo-conteudo .pai .conteudo h3 {
+    padding: 7px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #ccc;
     
-    background-color: #000000b6;
-    font-size: 22px;
+}
+
+.todo-conteudo .pai .conteudo p {
     text-align: center;
-    color: #fff;
+    font-size: 22px;   
+    transition: 1s; 
+}
+
+
+.todo-conteudo .pai .conteudo .descricao {
+    position: absolute;
+    display: none;
+    background-color: #2b2a2a;
+    height: 250px;
+    padding: 10px;
+    margin: 15px;
+       
+}
+
+.todo-conteudo .pai .conteudo:hover .descricao {
+    display: block;
 }
