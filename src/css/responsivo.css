@@ -1,14 +1,10 @@
-@media (max-width:768px) {
+@media (max-width:768px)  {
     .todo-conteudo .pai  {
         flex-wrap: wrap;
     }
 }
 
-@media (max-width:800px) {
-    .todo-conteudo .pai  {
-        flex-wrap: wrap;
-    }
-}
+
 
 @media (max-width:375px) {
     .header {
@@ -21,6 +17,7 @@
 
     .header img {
         width: 150px;
+        opacity: 0.5;
     }
 
     .header .titulo {
@@ -30,5 +27,30 @@
 
     .header h1 {
         font-size: 30px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+    .footer img {
+       width: 110px;
+       margin: 20px;
+       opacity: 0.3;
+    }
+
+    .footer .direito {
+        display: none;
+    }
+
+    .footer .menu ul li {        
+        margin: 10px;
+    }
+
+    .footer .menu {
+        position: absolute;
+        padding: 30px;
     }
 }

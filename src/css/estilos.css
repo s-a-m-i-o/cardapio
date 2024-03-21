@@ -10,14 +10,13 @@ body {
 .header {
     display: flex;
     align-items: center; 
-    justify-content: center;
     margin: 15px;
     border-bottom: 3px solid #ccc;
     border-radius: 20px;
 }
 
 .header img {
-    width: 100px;
+    width: 200px;
     padding: 15px;
 }
 
@@ -51,36 +50,63 @@ body {
 }
 
 .todo-conteudo .pai .conteudo img {
-    width: 150px;
-    
+    width: 150px;    
+}
+
+.todo-conteudo .pai .conteudo:hover img {
+    opacity: 0.1;
+    transition: 0.3s;
 }
 
 .todo-conteudo .pai .conteudo h3 {
     padding: 7px;
     margin-bottom: 5px;
-    /* border-bottom: 3px solid #ccc; */
+    transition: 0.3s;
     
 }
 
+.todo-conteudo .pai .conteudo:hover h3 {
+    opacity: 0;
+    visibility: hidden;
+} 
+
 .todo-conteudo .pai .conteudo p {
+    opacity: 0;
+    visibility: hidden;
     text-align: center;
     font-size: 22px;   
-    transition: 1s; 
+    transition: 0.5s ease-in-out;
 }
 
+.todo-conteudo .pai .conteudo:hover p {
+    opacity: 1;  
+    visibility: visible;
+}
 
 .todo-conteudo .pai .conteudo .descricao {
     position: absolute;
-    display: none;
     border-radius: 30px;
-    background-color: #2b2a2a;
     height: 250px;
     padding: 20px;
     margin: 15px;
-    transition: 0.4s ease-in-out;
-       
+}    
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    border-top: 3px solid #ccc;
+    border-radius: 20px;
 }
 
-.todo-conteudo .pai .conteudo:hover .descricao {
-    display: block;
+.footer img {
+    width: 100px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.footer .esquerdo  {
+    transform: scaleX(-1);
 }
