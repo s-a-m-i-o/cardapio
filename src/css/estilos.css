@@ -1,5 +1,7 @@
 body {
-    background-color: var(--cor-de-fundo);
+    background: url("../img/bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     font-family: var(--fonte-nome);
 }
