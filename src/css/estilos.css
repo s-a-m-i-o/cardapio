@@ -1,0 +1,76 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    border-bottom: 5px double #ccc;
+}
+
+h1.titulo {
+    margin: 30px 5px;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.conteudo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   
+}
+
+.conteudo img {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+
+.container .item{
+    position: absolute;
+    bottom: 80px;
+}
+
+.dentro {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+}
+
+
+.item .subtitulo {
+    border-bottom: 3px solid #fff;
+    width: 250px;
+    font-size: 35px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+.item .descricao {
+    width: 250px;
+    flex-wrap: wrap;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #02020238;
+    transition: 0.3s ease-in-out;
+}
+
+.item:hover .descricao {
+    
+    background-color: #000000b6;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
