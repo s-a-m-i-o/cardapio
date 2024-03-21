@@ -1,0 +1,34 @@
+@media (max-width:768px) {
+    .todo-conteudo .pai  {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:800px) {
+    .todo-conteudo .pai  {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:375px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 150px;
+    }
+
+    .header img {
+        width: 150px;
+    }
+
+    .header .titulo {
+        position: absolute;
+        
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+}
