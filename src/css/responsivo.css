@@ -4,6 +4,12 @@
     }
 }
 
+@media (max-width:900px)  {
+    .todo-conteudo .pai  {
+        flex-wrap: wrap;
+    }
+}
+
 
 
 @media (min-width:200px) and (max-width:415px) {

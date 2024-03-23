@@ -29,6 +29,13 @@ body {
     padding: 15px;
 }
 
+.todo-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
 .todo-conteudo .pai {
     display: flex;
     justify-content: center;
