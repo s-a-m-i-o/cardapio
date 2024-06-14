@@ -9,14 +9,14 @@ body {
 
 .header {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin: 15px;
     border-bottom: 3px solid #ccc;
     border-radius: 20px;
 }
 
 .header img {
-    width: 200px;
+    width: 150px;
     padding: 15px;
 }
 
@@ -26,7 +26,6 @@ body {
 
 .header h1 {
     text-align: center;
-    padding: 15px;
 }
 
 .todo-conteudo {
@@ -34,31 +33,34 @@ body {
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .todo-conteudo .pai {
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
-.todo-conteudo .pai .conteudo{
+.todo-conteudo .pai .conteudo {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
     padding: 15px;
     margin: 30px;
     margin-bottom: 50px;
     max-width: 300px;
-    height: 300px;
+    
+    position: relative;
+}
+
+.todo-conteudo .pai .conteudo img {
+    width: 150px;
     border-right: 2px solid #ccc;
     border-bottom: 1px solid #fff;
     border-radius: 10px;
-    position: relative;
-}
-.todo-conteudo .pai .conteudo img {
-    width: 150px;
-       
+
 }
 
 .todo-conteudo .pai .conteudo:hover img {
@@ -70,25 +72,31 @@ body {
     padding: 10px;
     margin-bottom: 5px;
     transition: 0.3s;
-    
+
 }
 
 .todo-conteudo .pai .conteudo:hover h3 {
     opacity: 0;
     visibility: hidden;
-} 
+}
 
 .todo-conteudo .pai .conteudo p {
     opacity: 0;
     visibility: hidden;
     text-align: center;
-    font-size: 22px;   
+    font-size: 22px;
     transition: 0.5s ease-in-out;
 }
 
 .todo-conteudo .pai .conteudo:hover p {
-    opacity: 1;  
+    opacity: 1;
     visibility: visible;
+}
+
+.todo-conteudo .pai .conteudo strong {
+    color: rgb(124, 15, 15);
+    text-decoration: underline;
+    text-shadow: 0px 0px 10px #000;
 }
 
 .todo-conteudo .pai .conteudo .descricao {
@@ -101,7 +109,7 @@ body {
     margin-top: 15px;
 }
 
-.especial .especial-dois{
+.especial .especial-dois {
     margin: 30px;
     height: 300px;
     display: flex;
@@ -150,7 +158,8 @@ body {
 
 footer {
     height: 150px;
-    margin:50px;;
+    margin: 50px;
+    ;
 }
 
 
@@ -170,6 +179,6 @@ footer {
     border-radius: 50%;
 }
 
-.footer .esquerdo  {
+.footer .esquerdo {
     transform: scaleX(-1);
 }

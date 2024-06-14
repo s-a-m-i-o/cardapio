@@ -1,18 +1,10 @@
-@media (max-width:768px)  {
-    .todo-conteudo .pai  {
+@media (max-width:768px) {
+    .todo-conteudo .pai {
         flex-wrap: wrap;
     }
 }
 
-@media (max-width:900px)  {
-    .todo-conteudo .pai  {
-        flex-wrap: wrap;
-    }
-}
-
-
-
-@media (min-width:200px) and (max-width:415px) {
+@media(max-width:485px) {
     .header {
         display: flex;
         justify-content: center;
@@ -28,7 +20,6 @@
 
     .header .titulo {
         position: absolute;
-        
     }
 
     .header h1 {
@@ -39,19 +30,19 @@
         display: flex;
         flex-direction: column;
         position: relative;
-      }
+    }
 
     .footer img {
-       width: 110px;
-       margin: 20px;
-       opacity: 0.3;
+        width: 110px;
+        margin: 20px;
+        opacity: 0.3;
     }
 
     .footer .direito {
         display: none;
     }
 
-    .footer .menu ul li {        
+    .footer .menu ul li {
         margin: 10px;
     }
 
