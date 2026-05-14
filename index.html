@@ -1,379 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taverna Real — Cardápio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/src/css/estilo.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Cardápio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+      background: linear-gradient(to top, #250438 0, 5%, #000000);
+      min-height: 100vh;
+      background-attachment: fixed;
+
+    }
+  </style>
 
 </head>
 
 <body>
 
-  <!-- Floating particles -->
-  <div class="particles" id="particles"></div>
-
-  <!-- ══ HEADER ══ -->
   <header>
-    <div class="header-ornament">
-      <div class="line"></div>
-      <div class="diamond"></div>
-      <div class="line"></div>
-    </div>
-    <h1 class="bar-name">Taverna Real</h1>
-    <p class="bar-subtitle">&#x2727; Est. Anno Domini 2024 &#x2727;</p>
-    <p class="header-tagline">Onde cada petisco é uma saga, cada drinque, uma lenda.</p>
+    <h1>Onde Roberto Carlos perdeu a perna</h1>
+    <h3>Nesta taverna esquecida pelo dia, cada gole é um juramento feito à noite.</h3>
   </header>
 
-  <!-- ══ NAV ══ -->
-  <nav>
-    <ul>
-      <li><a href="#petiscos">⚔ Petiscos</a></li>
-      <li><a href="#porcoes">🛡 Porções</a></li>
-      <li><a href="#bebidas">🍺 Bebidas</a></li>
-      <li><a href="#drinks">🍷 Drinks</a></li>
-      <li><a href="#sobremesas">👑 Sobremesas</a></li>
-    </ul>
-  </nav>
-
-  <!-- ══ MAIN ══ -->
   <main>
-
-    <!-- ── PETISCOS ── -->
-    <section class="menu-section" id="petiscos">
-      <div class="section-header reveal">
-        <i class="fas fa-khanda section-icon"></i>
-        <h2 class="section-title">Petiscos</h2>
-        <div class="section-divider">
-          <span></span><em>✦</em><span></span>
-        </div>
+    <section class="todo-conteudo">
+      <div class="card">
+        <img src="/src/img/01espumunha-de-nenem.gif" alt="Espuminha de nenem">
+        <h3 class="nome">Espuminha de nenem</h3>
+        <p class="descricao">Bebida doce e viciante. <br>Quem toma diz que é como voltar na infância.</p>
       </div>
-      <div class="items-grid">
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/1a0a2e/c9a84c?text=Bruschetta+Real" alt="Bruschetta Real" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">⚔ Destaque</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Bruschetta da Corte</h3>
-            <p class="card-desc">Pão rústico tostado ao forno de pedra, coberto com tomates frescos temperados em azeite
-              de ervas, manjericão colhido ao amanhecer e lascas de parmesão envelhecido.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/0a0518/c9a84c?text=Bolinho+Nobre" alt="Bolinho Nobre" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">🔥 Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Bolinho do Nobre</h3>
-            <p class="card-desc">Crocantes bolinhos de bacalhau com interior cremoso, temperados com pimenta-do-reino,
-              salsa fresca e limão siciliano. Acompanha aioli de alho negro.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/150a25/c9a84c?text=Crostini+Feudal" alt="Crostini Feudal" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Crostini Feudal</h3>
-            <p class="card-desc">Torradinhas artesanais com pasta de ricota defumada, geleia de pimenta biquinho e
-              finais de mel selvagem com flor de sal. Uma aventura em cada mordida.</p>
-          </div>
-        </div>
+
+      <div class="card">
+        <img src="/src/img/02doce-amargo.gif" alt="Doce Amargo">
+        <h3 class="nome">Doce Amargo</h3>
+        <p class="descricao">Doce Amargo? <br>Suave na boca. Pesado na alma.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/03manga-morta.png" alt="Manga Morta">
+        <h3 class="nome">Manga Morta</h3>
+        <p class="descricao">Doce demais pra parecer inocente. <br>Forte demais pra terminar bem.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/04calmaria-artificial.gif" alt="Calmaria Artificial">
+        <h3 class="nome">Calmaria Artificial</h3>
+        <p class="descricao">Maracujá acalma. <br>A cachaça termina o trabalho.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/05caipirinha.gif" alt="Caipirinha">
+        <h3 class="nome">Caipirinha</h3>
+        <p class="descricao">Clássica como boleto. <br>Machuca igual também.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/06lagrimas-tropicais.gif" alt="Lágrimas Tropicais">
+        <h3 class="nome">Lágrimas Tropicais</h3>
+        <p class="descricao">Parece milkshake. <br>Mas destrói sonhos como bebida adulta.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/07caipixi.gif" alt="Caipixi">
+        <h3 class="nome">Caipixi</h3>
+        <p class="descricao">Doce, gelada e perigosa. <br>Igual certas pessoas.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/08por-do-sol-em-divida.gif" alt="Pôr do Sol em Dívida">
+        <h3 class="nome">Pôr do Sol em Dívida</h3>
+        <p class="descricao">Cítrica como algumas verdades. <br>Difícil de engolir.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/09morango-radioativo.gif" alt="Morango Radioativo">
+        <h3 class="nome">Morango Radioativo</h3>
+        <p class="descricao">Bonitinha no copo. <br>Caótica no organismo.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/10suspiro-gaseificado.gif" alt="Suspiro Gaseificado">
+        <h3 class="nome">Suspiro Gaseificado</h3>
+        <p class="descricao">Refrescante no início. <br>Questionável depois do quarto gole.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/11chaparral-tradicional.gif" alt="Chaparral Tradicional">
+        <h3 class="nome">Chaparral Tradicional</h3>
+        <p class="descricao">...</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/12scarlet-sugar.gif" alt="Scarlet Sugar">
+        <h3 class="nome">Scarlet Sugar</h3>
+        <p class="descricao">Vermelho como erro antigo. <br>Doce como recaída.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/13trindade-liquida.gif" alt="Trindade Líquida">
+        <h3 class="nome">Trindade Líquida</h3>
+        <p class="descricao">Três cores. <br>Três decisões ruins esperando acontecer.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/14chaparral-mortis.gif" alt="Chaparral Mortis">
+        <h3 class="nome">Chaparral Mortis</h3>
+        <p class="descricao">A versão tropical da tragédia original.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/15eclipse-amargo.gif" alt="Eclipse Amargo">
+        <h3 class="nome">Eclipse Amargo</h3>
+        <p class="descricao">Chocolate, limão e decisões questionáveis. <br>Uma combinação estranhamente bonita.</p>
+      </div>
+
+      <div class="card">
+        <img src="/src/img/16gemeos-do-vazio.gif" alt="Gêmeos do Vazio">
+        <h3 class="nome">Gêmeos do Vazio</h3>
+        <p class="descricao">Um roxo. Um preto. <br>Ambos com intenções duvidosas.</p>
       </div>
     </section>
-
-    <!-- ── PORÇÕES ── -->
-    <section class="menu-section" id="porcoes">
-      <div class="section-header reveal">
-        <i class="fas fa-shield-halved section-icon"></i>
-        <h2 class="section-title">Porções</h2>
-        <div class="section-divider">
-          <span></span><em>✦</em><span></span>
-        </div>
-      </div>
-      <div class="items-grid">
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/1a0a2e/c9a84c?text=Costelinha+Medieval" alt="Costelinha Medieval" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">👑 Chef</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Costelinha do Cavaleiro</h3>
-            <p class="card-desc">Costelas suínas marinadas por 24 horas em cerveja escura, alho e chimichurri defumado.
-              Grelhadas lentamente até atingirem a maciez perfeita. Servidas com pão de alho.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/0a0518/c9a84c?text=Frango+Rei" alt="Frango Rei" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">🔥 Popular</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Frango do Rei</h3>
-            <p class="card-desc">Generosa porção de filés de frango crocantes, temperados com especiarias do oriente e
-              acompanhados de molho de mel com mostarda artesanal e batatas rústicas.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/150a25/c9a84c?text=Tábua+Real" alt="Tábua Real" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Tábua da Realeza</h3>
-            <p class="card-desc">Uma majestosa tábua com embutidos selecionados, queijos maturados, azeitonas
-              temperadas, pastas artesanais e pães variados. Digna de um banquete real.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── BEBIDAS ── -->
-    <section class="menu-section" id="bebidas">
-      <div class="section-header reveal">
-        <i class="fas fa-beer-mug-empty section-icon"></i>
-        <h2 class="section-title">Bebidas</h2>
-        <div class="section-divider">
-          <span></span><em>✦</em><span></span>
-        </div>
-      </div>
-      <div class="items-grid">
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/1a0a2e/c9a84c?text=Cerveja+Artesanal" alt="Cerveja Artesanal" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">⚔ Exclusiva</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Cerveja da Taverna</h3>
-            <p class="card-desc">Cerveja artesanal produzida em parceria com mestres cervejeiros locais. Notas de
-              caramelo, lúpulo floral e amargor equilibrado. Servida gelada em caneco de cerâmica.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/0a0518/c9a84c?text=Vinho+Nobre" alt="Vinho Nobre" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Vinho dos Nobres</h3>
-            <p class="card-desc">Seleção de vinhos tintos e brancos de vinícolas premiadas. Encorpados, elegantes e com
-              taninos sedosos. Cada taça, uma viagem pelos melhores terroirs.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/150a25/c9a84c?text=Limonada+Imperial" alt="Limonada Imperial" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Limonada Imperial</h3>
-            <p class="card-desc">Limonada suíça preparada com limão siciliano, leite condensado e hortelã fresca.
-              Cremosa, refrescante e absolutamente irresistível. Pode ser servida com ou sem álcool.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── DRINKS ── -->
-    <section class="menu-section" id="drinks">
-      <div class="section-header reveal">
-        <i class="fas fa-wine-glass-empty section-icon"></i>
-        <h2 class="section-title">Drinks</h2>
-        <div class="section-divider">
-          <span></span><em>✦</em><span></span>
-        </div>
-      </div>
-      <div class="items-grid">
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/1a0a2e/c9a84c?text=Elixir+Purpura" alt="Elixir Purpura" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">🔮 Especial</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Elixir Púrpura</h3>
-            <p class="card-desc">Drinque exclusivo da casa com gin premium, licor violeta, framboesa fresca, água tônica
-              e pétalas cristalizadas. Uma poção mágica para os sentidos.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/0a0518/c9a84c?text=Caipirinha+Dourada" alt="Caipirinha Dourada" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">🔥 Favorito</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Caipirinha Dourada</h3>
-            <p class="card-desc">Caipirinha da casa com cachaça envelhecida oito anos em barril de carvalho, mel de
-              abelhas nativas, gengibre fresco e limão-cravo. Suavidade e profundidade únicas.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/150a25/c9a84c?text=Negroni+Ancestral" alt="Negroni Ancestral" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Negroni Ancestral</h3>
-            <p class="card-desc">A clássica receita italiana elevada com bitter artesanal defumado, vermute vermelho e
-              gin botânico. Finalizado com casca de laranja flamejada sobre gelo esculpido.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SOBREMESAS ── -->
-    <section class="menu-section" id="sobremesas">
-      <div class="section-header reveal">
-        <i class="fas fa-crown section-icon"></i>
-        <h2 class="section-title">Sobremesas</h2>
-        <div class="section-divider">
-          <span></span><em>✦</em><span></span>
-        </div>
-      </div>
-      <div class="items-grid">
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/1a0a2e/c9a84c?text=Brownie+Imperial" alt="Brownie Imperial" />
-            <div class="card-img-overlay"></div>
-            <span class="card-badge">👑 Assinatura</span>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Brownie Imperial</h3>
-            <p class="card-desc">Brownie de chocolate 70% cacau com flor de sal, servido quente com bola de sorvete de
-              baunilha de Madagascar e fio de calda de caramelo salgado. Um tesouro da confeitaria.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/0a0518/c9a84c?text=Pudim+do+Feudo" alt="Pudim do Feudo" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Pudim do Feudo</h3>
-            <p class="card-desc">Pudim de leite tradicional com toque de licor de baunilha e calda de caramelo escuro.
-              Cremoso, aveludado e com aquela textura sedosa que derrete na língua.</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <div class="card-img-wrap">
-            <img src="https://placehold.co/600x450/150a25/c9a84c?text=Crepe+da+Rainha" alt="Crepe da Rainha" />
-            <div class="card-img-overlay"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-line"></div>
-            <h3 class="card-name">Crepe da Rainha</h3>
-            <p class="card-desc">Crepe fino e dourado recheado com Nutella belga, morangos frescos fatiados e chantilly
-              artesanal. Finalizado com açúcar de confeiteiro e raspas de limão-siciliano.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="footer-logo">Taverna Real</div>
-    <p class="footer-tagline">Onde lendas se tornam sabor.</p>
-    <div class="social-links">
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </div>
-    <p class="footer-copy">© 2024 Taverna Real · Todos os direitos reservados</p>
-  </footer>
 
-  <script>
-    // ── Scroll reveal ──
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
-
-    // ── Active nav link ──
-    const sections = document.querySelectorAll('.menu-section');
-    const navLinks = document.querySelectorAll('nav a');
-    const navObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(a => a.classList.remove('active'));
-          const link = document.querySelector(`nav a[href="#${entry.target.id}"]`);
-          if (link) link.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    sections.forEach(s => navObserver.observe(s));
-
-    // ── Floating particles ──
-    const container = document.getElementById('particles');
-    for (let i = 0; i < 18; i++) {
-      const p = document.createElement('div');
-      p.className = 'particle';
-      const size = Math.random() * 3 + 1;
-      p.style.cssText = `
-      width: ${size}px;
-      height: ${size}px;
-      left: ${Math.random() * 100}%;
-      animation-duration: ${Math.random() * 20 + 15}s;
-      animation-delay: ${Math.random() * 15}s;
-      opacity: 0;
-      background: ${Math.random() > 0.5 ? '#c9a84c' : '#9d4de6'};
-    `;
-      container.appendChild(p);
-    }
-
-    // ── Staggered card reveal ──
-    document.querySelectorAll('.items-grid').forEach(grid => {
-      const cards = grid.querySelectorAll('.menu-card');
-      const gridObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            cards.forEach((card, i) => {
-              setTimeout(() => card.classList.add('visible'), i * 120);
-            });
-            gridObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.05 });
-      gridObserver.observe(grid);
-    });
-  </script>
 </body>
 
 </html>
