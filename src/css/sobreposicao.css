@@ -1,0 +1,73 @@
+/* ========================= CARD ========================= */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================= BOTÃO ========================= */
+.abrir-ingredientes {
+    width: 100%;
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #3b0000;
+    color: #d6c7a1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.abrir-ingredientes:hover {
+    background: #5c0000;
+}
+
+/* ========================= SOBREPOSIÇÃO ========================= */
+.ingredientes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.96);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    /* z-index alto o suficiente para ficar acima do ::before do card */
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+/* ========================= ATIVAR ========================= */
+.card.ativo .ingredientes {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================= TITULO ========================= */
+.ingredientes h4 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* ========================= TEXTO ========================= */
+.ingredientes p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* ========================= BOTÃO FECHAR ========================= */
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}

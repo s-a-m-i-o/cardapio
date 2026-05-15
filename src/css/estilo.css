@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Lora:wght@400;600&family=Merriweather:wght@300;400&display=swap');
 
 
@@ -81,7 +80,8 @@ header h3 {
 
 .card {
     width: 260px;
-    height: 420px;
+    /* CORREÇÃO: era "height:100" sem unidade — agora usa min-height para o overlay cobrir corretamente */
+    min-height: 420px;
 
     display: inline-flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ header h3 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 
     overflow: hidden;
-    position: relative;
+    position: relative; /* necessário para o overlay position:absolute funcionar */
 
     transition: 0.4s ease;
 }
@@ -110,6 +110,8 @@ header h3 {
     background: radial-gradient(circle at top, rgba(81, 2, 112, 0.664), transparent 60%);
     opacity: 0;
     transition: 0.4s ease;
+    /* z-index menor que o overlay de ingredientes */
+    z-index: 0;
 }
 
 .card:hover {
@@ -128,6 +130,8 @@ header h3 {
     object-fit: contain;
     border-radius: 10px;
     filter: grayscale(20%) contrast(1.1);
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -140,6 +144,9 @@ header h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -152,8 +159,15 @@ header h3 {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    }
 
+    position: relative;
+    z-index: 1;
+}
+
+.abrir-ingredientes {
+    position: relative;
+    z-index: 1;
+}
 
 
 html {
