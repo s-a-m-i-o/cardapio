@@ -50,14 +50,23 @@
 
 /* ========================= TITULO ========================= */
 .ingredientes h4 {
-    color: gold;
+    color: #947902;
     margin-bottom: 20px;
 }
 
 /* ========================= TEXTO ========================= */
 .ingredientes p {
-    text-align: center;
+    text-align: left;
     line-height: 1.7;
+}
+
+.ingredientes ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  line-height:1.9 ;
+  width: 90%;
 }
 
 /* ========================= BOTÃO FECHAR ========================= */
