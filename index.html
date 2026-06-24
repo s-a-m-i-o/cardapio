@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="/src/css/reset-imports.css">
   <link rel="stylesheet" href="/src/css/estilo.css">
   <link rel="stylesheet" href="/src/css/sobreposicao.css">
+  <link rel="stylesheet" href="/src/css/audio.css">
 </head>
 
 <body>
 
   <header>
-    <img src="/src/img/escudo-.png" alt="Escudo Viking">
+    <img src="/src/img/escudo-.png" alt="Escudo Viking" >
     <div class="logo">
       <h1>O que acontece em vegas, fica em vegas</h1>
 
@@ -549,39 +550,9 @@
       </div>
 
     </section>
-
   </main>
 
-<script>
-
-const abrir = document.querySelectorAll('.abrir-ingredientes');
-const fechar = document.querySelectorAll('.fechar');
-
-abrir.forEach(botao => {
-
-    botao.addEventListener('click', () => {
-
-        const card = botao.closest('.card');
-
-        card.classList.add('ativo');
-
-    });
-
-});
-
-fechar.forEach(botao => {
-
-    botao.addEventListener('click', () => {
-
-        const card = botao.closest('.card');
-
-        card.classList.remove('ativo');
-
-    });
-
-});
-
-</script>
+<script src="./src/js/sobrepor.js"></script>
 
 </body>
 
