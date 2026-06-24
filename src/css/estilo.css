@@ -35,7 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 20px;
+    padding: 10px;
     position: relative;
     z-index: 2;
 }
@@ -50,9 +50,15 @@ header img {
 }
 
 header .logo {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
+}
+header h1, h2 {
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,7 +70,7 @@ header .logo {
 
 header h1 {
     font-family: "Cinzel Decorative", serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 4px;
     color: #947902;
     text-shadow: 0 0 10px #000;
@@ -73,7 +79,7 @@ header h1 {
     -webkit-text-stroke-color: rgb(5, 5, 5);
 }
 
-header h3 {
+header h2 {
     font-family: "EB Garamond", serif;
     font-style: italic;
     font-size: 1.3rem;
