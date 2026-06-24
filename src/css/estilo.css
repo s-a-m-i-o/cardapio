@@ -31,19 +31,33 @@ body::before {
 
 
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 50px 20px 20px;
     position: relative;
     z-index: 2;
 }
 
 header img {
-    width: 10%;
+    width:30%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow( 1px 1px 10px black)
+    drop-shadow( 1px 1px 10px black);
+}
+
+header .logo {
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
     header img {
-        width: 50%;
+        width:400px;
+        opacity: 0.4;
     }
 }
 
@@ -54,6 +68,8 @@ header h1 {
     color: #947902;
     text-shadow: 0 0 10px #000;
     margin-bottom: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(5, 5, 5);
 }
 
 header h3 {
@@ -65,7 +81,7 @@ header h3 {
     margin: 0 auto;
     line-height: 1.8;
     letter-spacing: 0.1rem;
-    text-shadow: 0 0 7px #000;
+    text-shadow: 2px 2px 1px #000;
 }
 
 
