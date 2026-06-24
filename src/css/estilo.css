@@ -61,18 +61,11 @@ header h1, h2 {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    header img {
-        width:400px;
-        opacity: 0.4;
-    }
-}
-
 header h1 {
     font-family: "Cinzel Decorative", serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 4px;
-    color: #947902;
+    color: #b49404;
     text-shadow: 0 0 10px #000;
     margin-bottom: 10px;
     -webkit-text-stroke-width: 1px;
@@ -82,13 +75,30 @@ header h1 {
 header h2 {
     font-family: "EB Garamond", serif;
     font-style: italic;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #fcfbfb;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.8;
     letter-spacing: 0.1rem;
     text-shadow: 2px 2px 1px #000;
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        width:400px;
+        opacity: 0.4;
+    }
+    header h1 {
+        font-size: 2rem;   
+        color: #ebc004;
+        -webkit-text-stroke-width: .5px;     
+        -webkit-text-stroke-color: black;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
 }
 
 
